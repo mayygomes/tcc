@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.Servicos {
+text-align: center;
+color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 5rem;
+}
+
+/* Corpo da página */
+body {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: 'poppinsregular', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.logo{
+  display: flex;
+  align-items: right;
+  margin-left: -800px;
+}
+.logo img {
+  width: 120px;
+}
+
+.logus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -80px;
+}
+.logus h1 {
+  font-size: 28px;
+  color: var(--azul);
+}
+
+.logus img {
+  width: 30px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  color: rgb(80, 86, 160);
+  transition: 0.3s all;
+}
+
+/* Estilos para o link "Já tem uma conta?" e o toggle switch */
+.account-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaçamento entre o link e o toggle switch */
+}
+
+/* Conteúdo principal */
+main {
+  display: block;
+  gap: 30px;
+}
+
+/* As caixas de conteúdo */
+.box-container {
+  display: flex;
+  -ms-flex-align: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1 1 100%;
+  max-width: 400px;
+  background-color: #616161;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #dddde6;
+}
+
+.box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.box .btn {
+  background-color: var(--blue);
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.box .btn:hover {
+  background-color: rgb(8, 11, 59);
+  transition: 0.3s all;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+ 
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: rgb(27, 46, 70);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2000px;
+}
+
+/* Seção sobre nós */
+.about {
+  margin-top: 40px;
+  padding: 40px 0;
+  background-color: #222;
+  color: white;
+}
+
+.about .heading {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about .row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.about .content {
+  flex: 8;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+footer{
+  background-color: #090909;
+  padding: 50px 0;
+}
+.container-footer{
+  max-width: 1400px;
+  padding: 0 5%;
+  margin: auto;
+}
+.row-footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+footer { 
+  background-color: #17181d;
+  padding: 5px 0; /* Reduzi o padding para deixar mais fino */
+}
+.container-footer {
+  max-width: 8000px; /* Aumentei a largura máxima */
+  padding: 1 2%; /* Reduzi o padding lateral */
+  margin: auto;
+}
+.footer-col {
+  width: 15%; /* Reduzi a largura para ajustar mais colunas na linha */
+  padding: 0 5px; /* Reduzi o padding interno */
+}
+.footer-col h4 {
+  font-size: 20px; /* Levemente menor */
+  color: white;
+  margin-bottom: 15px; /* Menor espaçamento */
+  font-weight: 500px;
+  position: line;
+  text-transform: uppercase;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li {
+  margin: 8px 0;
+}
+.footer-col ul li a {
+  font-size: 14px; 
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #cecdcd;
+  padding-left: 8px;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .about .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .image img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about .content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 800px) {
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+@media (max-width:600px) {
+  .footer-col{
+      width: 100%;
+  }
+}

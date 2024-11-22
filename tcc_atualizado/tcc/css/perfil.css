@@ -1,0 +1,411 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'poppinsregular', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    padding-top: 80px; /* Adiciona um padding para evitar que o conteúdo fique escondido atrás do header */
+}
+
+main {
+    height: auto; /* Permite rolagem ao conteúdo */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+span {
+    font-size: x-large;
+}
+
+.swiper {
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --cinza: #f5f1f1;
+    --azul: #285598;
+}
+
+ul, li, a {
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0px;
+    position: fixed; /* Torna a barra fixa no topo */
+    top: 0; /* Garante que fique no topo da tela */
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
+    margin: 0; /* Remove qualquer margem */
+    background-color: rgb(34, 34, 34);
+}
+
+.barra {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+.logus h1 {
+    font-size: 28px;
+    color: var(--azul);
+}
+
+.logus {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.logus img {
+    margin-left: 10px;
+    width: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 90px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nome_home {
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #235997;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+ul a {
+    font-size: 16px;
+    color: #6882a4;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.container {
+    position: absolute;
+    width: 650px;
+    height: 350px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    border-radius: 20px;
+    box-shadow: #676767 2px 2px 10px 1px;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.linha {
+    width: 2px;
+    height: 150px;
+    background: #616161;
+    position: absolute;
+    margin-left: 230px;
+    border-radius: 4px;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.info .user-name span{
+    font-size: 20px;
+}
+
+.info .user-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info .user-item span{
+    font-size: 16px;
+}
+
+.img-perfil {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#user_perfil {
+    display: flex;
+    width: 30px;
+}
+
+#user_avatar {
+    border-radius: 50% !important;
+    width: 100%;
+}
+
+.Btn {
+    position: absolute;
+    width: 35px;
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .3s;
+    margin-bottom: -190px;
+}
+
+.svg {
+    width: 100%;
+    right: 0;
+    fill: var(--azul);
+    transition-duration: .3s;
+}
+
+.Btn:hover {
+    color: transparent;
+}
+
+.Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.progresso {
+    margin-top: 20px; /* Garante que o progresso fique abaixo do container */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    /* gap: 60px; */
+}
+
+.curriculo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-img {
+    height: 340px;
+}
+
+.container-img img {
+    height: 100%;
+}
+
+.simulado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.botaum{
+    width: 180px;
+    height: 45px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    font-size: 18px;
+    text-align: center; 
+    color: white; 
+    background: #616161;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+
+}
+.button {
+    align-items: end;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    font-size: 20px; 
+    text-align: center; 
+    color: white; 
+    background-color: #1c4a7d; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer; /* Ícone de clique */
+    transition: background-color 0.4s; /* Transição suave */
+
+  }
+  
+  .button:hover {
+    background-color: #06214a; /* Cor de fundo no hover */
+    transform: scale(1.0);
+  }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .barra {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .logus h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .container {
+        width: 80%;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 20px;
+        gap: 50px;
+    }
+
+    .info {
+        width: 100%;
+        height: auto;
+        gap: 15px;
+    }
+
+    .img-perfil {
+        width: 120px;
+        height: 160px;
+    }
+
+    .progresso {
+        gap: 50px;
+    }
+
+    .swiper {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .barra {
+        padding: 0 5px;
+    }
+
+    .logus h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+        gap: 40px;
+    }
+
+    .info {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .img-perfil {
+        width: 100px;
+        height: 130px;
+    }
+
+    .swiper {
+        height: 250px;
+    }
+}
